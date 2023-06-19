@@ -104,6 +104,7 @@ namespace test
         private void MyButtonClickHandler(object sender, string id)  // Hàm này được dùng để hiển thị video trên user control khác.
         {
             WATCH_VIDEO_FORM = new WatchVideo(this.MAIN,id);
+            this.MAIN.MainForm.Controls.Clear();
             this.MAIN.MainForm.Controls.Add(WATCH_VIDEO_FORM);
         }
         private void OpenYoutubeChannel(object sender, string id)  
