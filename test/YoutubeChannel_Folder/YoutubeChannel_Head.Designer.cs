@@ -49,7 +49,7 @@
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(183, 182);
+            this.pictureBox1.Size = new System.Drawing.Size(183, 181);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -94,16 +94,16 @@
             this.panel1.Controls.Add(this.Videos);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(0, 182);
+            this.panel1.Location = new System.Drawing.Point(0, 181);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1474, 69);
+            this.panel1.Size = new System.Drawing.Size(2100, 69);
             this.panel1.TabIndex = 4;
             // 
             // About
             // 
             this.About.AutoSize = true;
             this.About.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.About.Location = new System.Drawing.Point(783, 34);
+            this.About.Location = new System.Drawing.Point(205, 34);
             this.About.Name = "About";
             this.About.Size = new System.Drawing.Size(88, 32);
             this.About.TabIndex = 7;
@@ -115,7 +115,7 @@
             // 
             this.Videos.AutoSize = true;
             this.Videos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Videos.Location = new System.Drawing.Point(85, 34);
+            this.Videos.Location = new System.Drawing.Point(48, 34);
             this.Videos.Name = "Videos";
             this.Videos.Size = new System.Drawing.Size(93, 32);
             this.Videos.TabIndex = 4;
@@ -132,7 +132,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1474, 182);
+            this.panel2.Size = new System.Drawing.Size(2100, 181);
             this.panel2.TabIndex = 0;
             // 
             // YoutubeChannel_Head
@@ -144,7 +144,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "YoutubeChannel_Head";
-            this.Size = new System.Drawing.Size(1474, 251);
+            this.Size = new System.Drawing.Size(2100, 250);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

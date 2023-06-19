@@ -19,4 +19,17 @@
 
 
 
-t82copkYNgg
+https://221e-203-205-32-177.ngrok-free.app/api/video?videoId
+
+
+(link này được dùng để tìm kiếm video bằng từ khóa).
+https://fc4c-115-78-227-158.ngrok-free.app/api/search?q=news
+
+
+(link này được dùng để hiển thị tất cả các video của một kênh youtube).
+https://fc4c-115-78-227-158.ngrok-free.app/api/channel/video?id=UCWu91J5KWEj1bQhCBuGeJxw
+
+
+
+(link này được dùng để hiển thị tất cả các thông tin về một kênh youtube).
+https://fc4c-115-78-227-158.ngrok-free.app/api/channel/info?id=UCWu91J5KWEj1bQhCBuGeJxw

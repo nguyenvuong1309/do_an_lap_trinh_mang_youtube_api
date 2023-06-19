@@ -67,6 +67,25 @@ namespace test
                 }
             }
         }
+        public void setImage1(string url)
+        {
+            string imageUrl = url;
+
+            // Download the image from the URL
+            using (var webClient = new WebClient())
+            {
+                byte[] imageData = webClient.DownloadData(imageUrl);
+
+                // Create an Image object from the downloaded data
+                using (var stream = new System.IO.MemoryStream(imageData))
+                {
+                    Image image = Image.FromStream(stream);
+
+                    // Assign the image to the PictureBox control
+                    pictureBox1.Image = image;
+                }
+            }
+        }
 
         private void ItemVideo_Load(object sender, EventArgs e)
         {

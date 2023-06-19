@@ -50,10 +50,13 @@ namespace test
                 
                 var content = JsonConvert.SerializeObject(loginData);
                 var httpContent = new StringContent(content, Encoding.UTF8, "application/json");
-                var response = await client.PostAsync("http://172.20.10.2:8080/login", httpContent);
+                var response = await client.PostAsync("https://4aa6-171-245-165-167.ngrok-free.app/login", httpContent);
                
                 var responseContent = response.Content.ReadAsStringAsync().Result;
-                var responseHeader = response.Headers.ProxyAuthenticate;
+                var responseHeader = response.Headers.WwwAuthenticate;
+                this.MAIN.URLFind.seconndPart = responseHeader.ToString();
+
+                MessageBox.Show(responseHeader.ToString());
                 MessageBox.Show("login");
                 if (response.IsSuccessStatusCode)
                 {

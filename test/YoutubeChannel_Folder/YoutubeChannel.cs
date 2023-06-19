@@ -18,6 +18,7 @@ namespace test
         public Main MAIN = null;
         string IdYoutubeChannel = "";
         public YoutubeChannel_Body YOUTUBECHANNEL_BODY = null;
+        public string imageChannel = "";
 
 
         public YoutubeChannel()

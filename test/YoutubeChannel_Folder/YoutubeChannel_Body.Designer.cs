@@ -37,7 +37,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1681, 1500);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(2100, 1500);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // YoutubeChannel_Body
@@ -47,7 +47,7 @@
             this.BackColor = System.Drawing.Color.BurlyWood;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "YoutubeChannel_Body";
-            this.Size = new System.Drawing.Size(1681, 1500);
+            this.Size = new System.Drawing.Size(2100, 1500);
             this.ResumeLayout(false);
 
         }

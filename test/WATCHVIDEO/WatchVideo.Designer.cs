@@ -72,7 +72,7 @@
             this.flowLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(822, 664);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(822, 999);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // Title
@@ -98,12 +98,12 @@
             // Channel_Title
             // 
             this.Channel_Title.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Channel_Title.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Channel_Title.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Channel_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Channel_Title.Location = new System.Drawing.Point(81, 0);
             this.Channel_Title.Multiline = true;
             this.Channel_Title.Name = "Channel_Title";
-            this.Channel_Title.Size = new System.Drawing.Size(624, 66);
+            this.Channel_Title.Size = new System.Drawing.Size(738, 66);
             this.Channel_Title.TabIndex = 5;
             this.Channel_Title.Text = "Channel_Title";
             // 
@@ -123,7 +123,7 @@
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(822, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(680, 664);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1085, 999);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
             // WatchVideo
@@ -133,7 +133,7 @@
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "WatchVideo";
-            this.Size = new System.Drawing.Size(1502, 664);
+            this.Size = new System.Drawing.Size(1907, 999);
             this.information.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
