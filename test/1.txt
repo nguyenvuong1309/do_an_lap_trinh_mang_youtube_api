@@ -1,0 +1,22 @@
+- https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCxPAYgO8OpFev3PUTKbsxNw&key=AIzaSyCu3vIqZAgehD28RyVwoCLCSXTefYAUCBs
+(link này dùng để get thông tin về một kênh youtube, dùng id channel).
+(lấy .snippet.thumbnails.high.url,title, subscriberCount,customUrl, description)
+
+
+- https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=7dQuma8vxBI&key=AIzaSyCu3vIqZAgehD28RyVwoCLCSXTefYAUCBs
+(link này dùng để get thông tin về một video, dùng id video).
+(lấy channelId, title,channelTitle).
+
+
+- https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCxPAYgO8OpFev3PUTKbsxNw&maxResults=50&order=date&type=video&key=AIzaSyCu3vIqZAgehD28RyVwoCLCSXTefYAUCBs
+(link này dùng để get toàn bộ video của một kênh youtube, dùng id channel).
+(lấy videoId,snippet.thumbnails.high.url, channelTitle,title,channelId)
+
+
+
+
+
+
+
+
+t82copkYNgg
