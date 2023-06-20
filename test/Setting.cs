@@ -18,23 +18,31 @@ namespace test
         public Setting()
         {
             InitializeComponent();
-           /* this.url_firstPart_textbox.Text = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=";
-            this.url_secondPart_textbox.Text = "&type=video&key=AIzaSyCu3vIqZAgehD28RyVwoCLCSXTefYAUCBs&maxResults=20";*/
+            //this.url_firstPart_textbox.Text = this.MAIN.URLFind.firstPart;
+            this.url_secondPart_textbox.Text = this.MAIN.URLFind.seconndPart;
+            this.url_to_login_server.Text = this.MAIN.URL_TO_LOGIN_SERVER;
+            /* this.url_firstPart_textbox.Text = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=";
+             this.url_secondPart_textbox.Text = "&type=video&key=AIzaSyCu3vIqZAgehD28RyVwoCLCSXTefYAUCBs&maxResults=20";*/
         }
         public Setting(Main main)
         {
-            this.MAIN = main;
             InitializeComponent();
-          /*  this.url_firstPart_textbox.Text = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=";
-            this.url_secondPart_textbox.Text = "&type=video&key=AIzaSyCu3vIqZAgehD28RyVwoCLCSXTefYAUCBs&maxResults=20";*/
-          /*  url_firstPart_textbox.Text = this.MAIN.URLFind.firstPart;
-            url_secondPart_textbox.Text = this.MAIN.URLFind.seconndPart;*/
+            this.MAIN = main;
+            //this.url_firstPart_textbox.Text = this.MAIN.URLFind.firstPart;
+            this.url_secondPart_textbox.Text = this.MAIN.URLFind.seconndPart;
+            this.url_to_login_server.Text = this.MAIN.URL_TO_LOGIN_SERVER;
+            /*  this.url_firstPart_textbox.Text = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=";
+              this.url_secondPart_textbox.Text = "&type=video&key=AIzaSyCu3vIqZAgehD28RyVwoCLCSXTefYAUCBs&maxResults=20";*/
+            /*  url_firstPart_textbox.Text = this.MAIN.URLFind.firstPart;
+              url_secondPart_textbox.Text = this.MAIN.URLFind.seconndPart;*/
         }
 
         private void change_Click(object sender, EventArgs e)
         {
             this.MAIN.URLFind.firstPart = this.url_firstPart_textbox.Text + "/api/search?q=";
             this.MAIN.URLFind.seconndPart = this.url_secondPart_textbox.Text;
+
+            this.MAIN.URL_TO_LOGIN_SERVER = this.url_to_login_server.Text;
 
             this.MAIN.URL_YOUTUBE_CHANNEL.firstPart = this.url_firstPart_textbox.Text + "/api/channel/info?id=";
             this.MAIN.URL_YOUTUBE_CHANNEL.seconndPart= this.url_secondPart_textbox.Text;

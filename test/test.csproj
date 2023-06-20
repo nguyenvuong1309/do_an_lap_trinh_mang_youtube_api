@@ -70,6 +70,9 @@
     <ManifestKeyFile>test_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="Costura, Version=3.3.3.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
       <HintPath>packages\Costura.Fody.3.3.3\lib\net40\Costura.dll</HintPath>
     </Reference>
@@ -260,6 +263,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AES.cs" />
     <Compile Include="DATA\Data.cs" />
     <Compile Include="DATA\DATA_NGROK.cs" />
     <Compile Include="Data_comment.cs" />

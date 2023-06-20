@@ -18,6 +18,7 @@ namespace test
         public URL URL_YOUTUBE_CHANNEL = new URL();
         public URL URL_YOUTUBE_VIDEO = new URL();   
         public URL URL_FIND_VIDEO_IN_YOUTUBE_CHANNEL = new URL();
+        public string URL_TO_LOGIN_SERVER = "";
         public string USERNAME = "";
         public string PASSWORD = "";
         public string KeyWord = "";

@@ -34,8 +34,12 @@ namespace test
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            string Username = username.Text;
-            string Password = password.Text;
+            string plainText = "Hello, World!";
+            byte[] key = Encoding.UTF8.GetBytes("0123456789abcdef"); // 16-byte key
+            byte[] iv = new byte[16]; // Initialization Vector (16 bytes)
+
+            string Username = AES.Aes_cbc_128_Encrypt1(username.Text,key,iv);
+            string Password = AES.Aes_cbc_128_Encrypt1(password.Text,key,iv);
             LoginUser(Username, Password);
         }
         public async void LoginUser(string username, string password)
@@ -50,10 +54,11 @@ namespace test
                 
                 var content = JsonConvert.SerializeObject(loginData);
                 var httpContent = new StringContent(content, Encoding.UTF8, "application/json");
-                var response = await client.PostAsync("https://4aa6-171-245-165-167.ngrok-free.app/login", httpContent);
+                var response = await client.PostAsync(this.MAIN.URL_TO_LOGIN_SERVER + "/login", httpContent);
                
                 var responseContent = response.Content.ReadAsStringAsync().Result;
-                var responseHeader = response.Headers.WwwAuthenticate;
+                var responseHeader = response.Headers.GetValues("Authorization").FirstOrDefault();
+                // Xử lý JWT ở đây
                 this.MAIN.URLFind.seconndPart = responseHeader.ToString();
 
                 MessageBox.Show(responseHeader.ToString());
